@@ -1,5 +1,5 @@
 .view2 {
-	background: url("/assets/img/backgrounds/zlatani.jpg") !important;
+	background: url("/assets/img/backgrounds/zlatan.jpeg") !important;
 	height: 100vh;
 	color: white;
 }
@@ -16,9 +16,11 @@
 }
 
 .zprofile {
-	border-top-left-radius: 100%;
-	/* box-shadow: 9px 6px 18px 3px rgba(0, 0, 0, 0.65); */
-	border-bottom-left-radius: 100%;
+	box-shadow: 9px 6px 18px 3px rgba(0, 0, 0, 0.65);
+	border-radius: 100%;
+	width: 28%;
+	display: inline-block;
+	margin-left: -45px;
 }
 
 .playerinfoimg {
@@ -26,29 +28,65 @@
 }
 
 .playerinfo {
-	margin-top: 100px;
+	display: block;
+	width: 55%;
+	margin: 100px auto;
+	height: 324px;
 }
-.l7 .playerinfo {
-	margin: -50px;
-}
+
 .flat-table {
 	display: block;
 	font-family: sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 105%;
-	height: 61.5vh;
 	overflow: auto;
-	width: auto;
-	box-shadow: 9px 6px 18px 3px rgba(0, 0, 0, 0.65);
 	opacity: .97;
+	margin: 0 auto;
+	height: 100%;
 
 	td {
 		background-color: rgb(238, 238, 238);
 		color: rgb(111, 111, 111);
 		padding: 20px 30px;
+		border-radius: 0;
+		border-bottom: solid 1px rgb(70, 70, 70);
+
+	}
+	.bordertd {
+		border-right: solid 1px rgb(70, 70, 70);
 	}
 }
 
+.flat-table-season {
+	display: block;
+	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 105%;
+	overflow: auto;
+	width: 100%;
+	margin: 0 auto;
+	opacity: .97;
+	height: 100%;
+	td {
+		background-color: rgb(238, 238, 238);
+		color: rgb(111, 111, 111);
+		padding: 20px 30px;
+		border-radius: 0;
+		cursor: pointer;
+		border-bottom: solid 1px rgb(70, 70, 70);
+		border-right: solid 1px rgb(70, 70, 70);
+
+	}
+}
+
+.nameplayer {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 110px;
+}
+.seasons {
+	
+}
 //.hexa, .hexa div {
 //	margin: 0 auto;
 //	transform-origin: 50% 50%;
