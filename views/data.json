@@ -1,0 +1,287 @@
+{
+  "zlatan": {
+    "name": "zlatan",
+    "lastname": "ibrahimovic",
+    "gebDatum": "03.10.1981",
+    "nationalitaet": "schweden",
+    "backgroundPicSrc": "/assets/img/",
+    "cssClass": "zlatan",
+    "seasons": {
+      "2015": {
+        "data": [
+          {
+            "club": "psg",
+            "competition": "Ligue 1",
+            "deployments": "31",
+            "goals": "38",
+            "assists": "13",
+            "yellowCards": "1",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "2.553"
+          },
+          {
+            "competition": "Champions League",
+            "deployments": "10",
+            "goals": "5",
+            "assists": "3",
+            "yellowCards": "2",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "880"
+          },
+          {
+            "competition": "Coupe de France",
+            "deployments": "6",
+            "goals": "7",
+            "assists": "2",
+            "yellowCards": "1",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "455"
+          },
+          {
+            "competition": "Coupe de la Ligue",
+            "deployments": "3",
+            "goals": "-",
+            "assists": "-",
+            "yellowCards": "-",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "168"
+          },
+          {
+            "competition": "Trophée des Champions",
+            "deployments": "1",
+            "goals": "-",
+            "assists": "1",
+            "yellowCards": "-",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "90"
+          }
+        ]
+      },
+      "2014": {
+        "data": [
+          {
+            "competition": "Ligue 1",
+            "deployments": "24",
+            "goals": "19",
+            "assists": "6",
+            "yellowCards": "3",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "2.004'"
+          },
+          {
+            "competition": "Champions League",
+            "deployments": "6",
+            "goals": "2",
+            "assists": "1",
+            "yellowCards": "1",
+            "yellowRedCards": "-",
+            "redCards": "1",
+            "playMinutes": "477'"
+          },
+          {
+            "competition": "Coupe de la Ligue",
+            "deployments": "3",
+            "goals": "3",
+            "assists": "1",
+            "yellowCards": "1",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "270'"
+          },
+          {
+            "competition": "Coupe de France",
+            "deployments": "3",
+            "goals": "4",
+            "assists": "-",
+            "yellowCards": "-",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "270'"
+          },
+          {
+            "competition": "Trophée des Champions",
+            "deployments": "1",
+            "goals": "2",
+            "assists": "-",
+            "yellowCards": "-",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "90'"
+          }
+        ]
+      }
+    }
+  },
+  "jackson": {
+    "seasons": {
+      "2012": {
+        "data": [
+          {
+            "competition": "Liga NOS",
+            "deployments": "30",
+            "goals": "26",
+            "assists": "2",
+            "yellowCards": "-",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "2.684'"
+          },
+          {
+            "competition": "Champions League",
+            "deployments": "8",
+            "goals": "3",
+            "assists": "-",
+            "yellowCards": "1",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "708'"
+          },
+          {
+            "competition": "Taça CTT",
+            "deployments": "1",
+            "goals": "1",
+            "assists": "-",
+            "yellowCards": "-",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "44'"
+          },
+          {
+            "competition": "Supertaça",
+            "deployments": "1",
+            "goals": "1",
+            "assists": "-",
+            "yellowCards": "1",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "90'"
+          }
+        ]
+      },
+      "2013": {
+        "data": [
+          {
+            "competition": "Liga NOS",
+            "deployments": "30",
+            "goals": "20",
+            "assists": "3",
+            "yellowCards": "2",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "2.596'"
+          },
+          {
+            "competition": "Champions League",
+            "deployments": "6",
+            "goals": "2",
+            "assists": "-",
+            "yellowCards": "2",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "540'"
+          },
+          {
+            "competition": "Europa League",
+            "deployments": "5",
+            "goals": "1",
+            "assists": "-",
+            "yellowCards": "1",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "450'"
+          },
+          {
+            "competition": "Taça de Portugal Placard",
+            "deployments": "5",
+            "goals": "2",
+            "assists": "-",
+            "yellowCards": "2",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "428'"
+          },
+          {
+            "competition": "Taça CTT",
+            "deployments": "4",
+            "goals": "3",
+            "assists": "-",
+            "yellowCards": "-",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "259'"
+          },
+          {
+            "competition": "Supertaça",
+            "deployments": "1",
+            "goals": "1",
+            "assists": "-",
+            "yellowCards": "-",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "90'"
+          }
+        ]
+      }
+      "2014": {
+        "data": [
+          {
+            "competition": "Liga NOS",
+            "deployments": "30",
+            "goals": "21",
+            "assists": "6",
+            "yellowCards": "4",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "2.551'"
+          },
+          {
+            "competition": "Champions League",
+            "deployments": "8",
+            "goals": "7",
+            "assists": "1",
+            "yellowCards": "1",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "629'"
+          },
+          {
+            "competition": "CL-Quali",
+            "deployments": "2",
+            "goals": "1",
+            "assists": "-",
+            "yellowCards": "-",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "180'"
+          },
+          {
+            "competition": "Taça CTT",
+            "deployments": "1",
+            "goals": "2",
+            "assists": "-",
+            "yellowCards": "1",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "60'"
+          },
+          {
+            "competition": "Taça de Portugal Placard",
+            "deployments": "1",
+            "goals": "1",
+            "assists": "-",
+            "yellowCards": "-",
+            "yellowRedCards": "-",
+            "redCards": "-",
+            "playMinutes": "90'"
+          }
+        ]
+      }
+    }
+  }
+}

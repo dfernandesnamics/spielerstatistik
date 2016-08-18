@@ -1,14 +1,14 @@
 (function($) {
 	"use strict";
 	/**
-	 * playerview module implementation.
+	 * playerseasontable module implementation.
 	 *
 	 * @author Daniel Fernandes <daniel.fernandes@namics.com>
 	 * @namespace Tc.Module
-	 * @class Playerview
+	 * @class Playerseasontable
 	 * @extends Tc.Module
 	 */
-	Tc.Module.Playerview = Tc.Module.extend({
+	Tc.Module.Playerseasontable = Tc.Module.extend({
 
 		init: function($ctx, sandbox, modId) {
 			this._super($ctx, sandbox, modId);

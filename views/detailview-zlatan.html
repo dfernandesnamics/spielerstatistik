@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<?php partial('head'); ?>
+</head>
+<body>
+<div class="backgimg">
+	<div class="container">
+		<div class="row">
+			<?php component('profilepicture', 'zlatanibrahimovic'); ?>
+		</div>
+		<div class="row seasons">
+
+			<?php component('playerinfotable', 'zlatanibrahimovic'); ?>
+			<?php component('playerseasontable', 'zlatanibrahimovic'); ?>
+		</div>
+	</div>
+</div>
+<?php partial('foot'); ?>
+</body>
+</html>
