@@ -19,7 +19,7 @@
 		on: function (callback) {
 			var mod = this,
 				$ctx = mod.$ctx;
-			
+
 			mod.getPlayerData();
 
 			callback();
@@ -42,7 +42,9 @@
 			var player = mod.$ctx.data('player');
 			var season = mod.$ctx.data('season');
 			$('body').addClass(player);
-			
+			$('body').addClass('saison');
+
+
 			$(data[player].seasons[season].data).each(
 				function (index, item) {
 					var html = "<tr>";
@@ -71,12 +73,16 @@
 					html += item.playMinutes;
 					html += "</td>";
 					html += "</tr>";
-					
+
 					console.log(html);
 					$(".js-table-content").append(html);
 				}
-			)
+			);
+			if (season == season) {
+				$('.seasonTitle').append("<h3>" + season + "</h3>");
+			}
 		},
+
 
 		after: function () {
 			var mod = this,
