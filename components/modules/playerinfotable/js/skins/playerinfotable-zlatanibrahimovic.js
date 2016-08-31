@@ -13,7 +13,6 @@
 		this.on = function (callback) {
 			var mod = this,
 				$ctx = mod.$ctx;
-			mod.getPlayerInfo();
 
 			parent.on(callback);
 		};
