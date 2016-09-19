@@ -1,3 +1,21 @@
-<div class="mod mod-playerprofile-wrapper">
+<?php
+if(isset($_GET['playerId'])) {
+		$player = $_GET['playerId'];
+		
+	}
+?>
 
+<div class="mod mod-playerprofile-wrapper">
+	<div class="backgimg js-playerid" data-player="<?php echo $player; ?>">
+		<div class="container">
+			<div class="row">
+				<?php component('profilepicture'); ?>
+			</div>
+			<div class="row seasons">
+	
+				<?php component('playerinfotable'); ?>
+				<?php component('playerseasontable'); ?>
+			</div>
+		</div>
+	</div>
 </div>

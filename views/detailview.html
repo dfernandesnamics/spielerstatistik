@@ -1,10 +1,18 @@
+<?php
+if(isset($_GET['playerId'])) {
+		$player = $_GET['playerId'];
+		
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<?php partial('head'); ?>
-	</head>
-	<body>
-		<?php component('detailview'); ?>
-		<?php partial('foot'); ?>
-	</body>
+<head>
+	<?php partial('head'); ?>
+</head>
+<body>
+	<?php component('playerprofile-wrapper'); ?>
+<?php partial('foot'); ?>
+
+</body>
 </html>
