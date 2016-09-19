@@ -30,9 +30,18 @@
 			var mod = this;
 			$.ajax({
 				url: "/views/data",
-				method: "post",
+				method: "post ",
 				success: function (response) {
+					var player = mod.$ctx.data('player');
+					var season = mod.$ctx.data('season');
+					if (typeof (response[player].seasons[season]) === 'undefined') {
+						alert('not defined');
+					}
 					mod.processData(response);
+
+				},
+				error: function (error) {
+					alert(error);
 				}
 			})
 		},
@@ -74,14 +83,14 @@
 					html += "</td>";
 					html += "</tr>";
 
-					console.log(html);
+
 					$(".js-table-content").append(html);
 				}
 			);
 			var clubName = $(data[player].infos);
 			if (season == season) {
 				$('.seasonTitle').append("<h3>" + season + "</h3>");
-				$('.seasonteam').append("<h3>" + clubName.club + "</h3>");
+				$('.seasonteam').append("<h3>" + clubName[0].club + "</h3>");
 			}
 		},
 
