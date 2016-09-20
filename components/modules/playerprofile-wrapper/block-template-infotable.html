@@ -2,10 +2,11 @@
 	<div class="mod mod-playerinfotable skin-playerinfotable-{{playerName}}">
 		<div class="col l6 push-l1 infos">
 			<table class="flat-table js-flat-table">
+				{{#each playerData}}
 				<tr>
-					<td></td>
-					<td></td>
+					<td>{{this}}</td>
 				</tr>
+				{{/each}}
 			</table>
 		</div>
 	</div>

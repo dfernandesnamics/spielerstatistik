@@ -41,64 +41,65 @@
 		processJson: function (data) {
 			var mod = this;
 			var player = $('.js-player-id', mod.$ctx).val();
-			
+
 			mod.buildTemplatePicProfile({
 				profilPic: data[player].specialAttributes.profilePicSrc,
-				name: data[player].infos.firstLastName,
+				name: data[player].specialAttributes.naming,
 				playerName: data[player].specialAttributes.cssClass
 			});
-			// mod.buildTemplateInfoTable({
-			// 	playerName: data[player].infos.cssClass
-			// });
-			mod.buildTemplateSeasonTable({
-				playerId: data[player].specialAttributes.cssClass
-			});
-			
 
+			mod.buildTemplateSeasonTable({
+				playerId: data[player].specialAttributes.cssClass,
+				seasons: data[player].seasons
+			});
+
+			mod.buildTemplateInfoTable({
+				playerData: data[player].infos
+			});
 		},
-		
+
 		buildTemplatePicProfile: function (dataObject) {
 			var mod = this;
 			var templateSrc = $('#tpl-profpic').html(),
 				template = Handlebars.compile(templateSrc),
 				html = template(dataObject),
 				$outlet = $('.js-outlet-profilpic-module', mod.$ctx);
-			
-				$outlet.html(html);
-			
+
+			$outlet.html(html);
+
 		},
-		buildTemplateInfoTable: function(dataObject) {
-			var mod = this;
-			
-			var templateSrc = $('#tpl-inftbl').html(),
-				template = Handlebars.compile(templateSrc),
-				html = template(dataObject),
-				$outlet = $('.js-outlet-info-season-table', mod.$ctx);
-			
-				$outlet.html(html);
-		},
-		buildTemplateSeasonTable: function(dataObject) {
+
+		buildTemplateSeasonTable: function (dataObject) {
 			var mod = this;
 			console.log(dataObject);
 			var tempArray = [];
-			
+
 			for (var key in dataObject.seasons) {
 				if (dataObject.seasons.hasOwnProperty(key)) {
 					tempArray.push(key);
 				}
 			}
-			
+
 			dataObject.seasonKeys = tempArray;
-			
+
 			var templateSrc = $('#tpl-seasntbl').html(),
 				template = Handlebars.compile(templateSrc),
 				html = template(dataObject),
-				$outlet = $('.js-outlet-info-season-table', mod.$ctx);
-			
-				$outlet.html(html);
+				$outlet = $('.js-outlet-season-table', mod.$ctx);
+
+			$outlet.html(html);
 		},
-		
-		
+
+		buildTemplateInfoTable: function (dataObject) {
+			var mod = this;
+			
+			var templateSrc = $('#tpl-inftbl').html(),
+				template = Handlebars.compile(templateSrc),
+				html = template(dataObject),
+				$outlet = $('.js-outlet-info-table', mod.$ctx);
+
+			$outlet.append(html);
+		},
 		after: function () {
 			var mod = this,
 				$ctx = mod.$ctx;

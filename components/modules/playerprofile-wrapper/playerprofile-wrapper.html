@@ -10,9 +10,8 @@ if(isset($_GET['playerId'])) {
 	<div class="backgimg js-playerid" data-player="<?php echo $player; ?>">
 		<div class="container">
 			<div class="row js-outlet-profilpic-module">
-				testing
 			</div>
-			<div class="row seasons js-outlet-info-season-table">
+			<div class="row seasons js-outlet-info-table js-outlet-season-table">
 	
 				<?php component('playerinfotable'); ?>
 				<?php component('playerseasontable'); ?>
@@ -21,4 +20,6 @@ if(isset($_GET['playerId'])) {
 	</div>
 	
 	<?php include ("block-template-profilpicture.html"); ?>
+	<?php include ("block-template-seasontable.html"); ?>
+	<?php include ("block-template-infotable.html"); ?>
 </div>
