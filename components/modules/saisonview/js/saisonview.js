@@ -21,16 +21,18 @@
 				$ctx = mod.$ctx;
 
 			mod.getPlayerData();
+			
+			$ctx.on('startProcess', $.proxy(mod.getPlayerData, mod));
 
 			callback();
 		},
 
 
-		getPlayerData: function () {
+		getPlayerData: function (evt, data) {
 			var mod = this;
 			$.ajax({
 				url: "/views/data",
-				method: "post ",
+				method: "post",
 				success: function (response) {
 					var player = mod.$ctx.data('player');
 					var season = mod.$ctx.data('season');
