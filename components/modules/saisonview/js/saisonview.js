@@ -89,7 +89,7 @@
 					$(".js-table-content").append(html);
 				}
 			);
-			var clubName = $(data[player].infos);
+			var clubName = $(data[player].specialAttributes);
 			if (season == season) {
 				$('.seasonTitle').append("<h3>" + season + "</h3>");
 				$('.seasonteam').append("<h3>" + clubName[0].club + "</h3>");
