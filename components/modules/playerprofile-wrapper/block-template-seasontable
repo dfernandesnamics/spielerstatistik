@@ -1,0 +1,35 @@
+<script id="tpl-seasntbl" type="text/x-handlebars-template">
+	<div class="mod mod-playerseasontable skin-playerseasontable-{{playerName}}">
+		<div class="col l5 push-l1 seasonDisplay">
+			<a href="/views/saisonview">
+				<table class="flat-table-season">
+					<tr>
+						<td>
+							<a href="/views/saisonview?playerId={{playerId}}&season=2012">
+								2012/13
+							</a>
+						</td>
+						<td class="bordrad">
+							<a href="/views/saisonview?playerId={{playerId}}&season=2013">
+								2013/14
+							</a>
+						</td>
+					</tr>
+					<tr>
+	
+						<td>
+							<a href="/views/saisonview?playerId={{playerId}}&season=2014">
+								2014/15
+							</a>
+						</td>
+						<td>
+							<a href="/views/saisonview?playerId={{playerId}}&season=2015">
+								2015/16
+							</a>
+						</td>
+					</tr>
+				</table>
+			</a>
+		</div>
+	</div>
+</script>
