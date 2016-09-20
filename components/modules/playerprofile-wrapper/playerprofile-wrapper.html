@@ -6,16 +6,19 @@ if(isset($_GET['playerId'])) {
 ?>
 
 <div class="mod mod-playerprofile-wrapper">
+	<input class="js-player-id" type="hidden" value="<?php echo $player; ?>">
 	<div class="backgimg js-playerid" data-player="<?php echo $player; ?>">
 		<div class="container">
-			<div class="row">
-				<?php component('profilepicture'); ?>
+			<div class="row js-outlet-profilpic-module">
+				testing
 			</div>
-			<div class="row seasons">
+			<div class="row seasons js-outlet-info-season-table">
 	
 				<?php component('playerinfotable'); ?>
 				<?php component('playerseasontable'); ?>
 			</div>
 		</div>
 	</div>
+	
+	<?php include ("block-template-profilpicture.html"); ?>
 </div>
