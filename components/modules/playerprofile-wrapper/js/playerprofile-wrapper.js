@@ -43,16 +43,15 @@
 			var player = $('.js-player-id', mod.$ctx).val();
 			
 			mod.buildTemplatePicProfile({
-				profilPic: data[player].infos.profilePicSrc,
+				profilPic: data[player].specialAttributes.profilePicSrc,
 				name: data[player].infos.firstLastName,
-				playerName: data[player].infos.cssClass
+				playerName: data[player].specialAttributes.cssClass
 			});
 			// mod.buildTemplateInfoTable({
 			// 	playerName: data[player].infos.cssClass
 			// });
 			mod.buildTemplateSeasonTable({
-				playerId: data[player].infos.cssClass,
-				seasons: data[player].seasons
+				playerId: data[player].specialAttributes.cssClass
 			});
 			
 

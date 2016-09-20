@@ -39,7 +39,6 @@
 
 			var player = $('.js-playerid').data('player');
 			$('body').addClass(player);
-			console.log(data[player]);
 
 			$(data[player].infos).each(
 				function (index, item) {
