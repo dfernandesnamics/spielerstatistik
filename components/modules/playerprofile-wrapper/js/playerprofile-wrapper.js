@@ -41,20 +41,19 @@
 		processJson: function (data) {
 			var mod = this;
 			var player = $('.js-player-id', mod.$ctx).val();
-
-			console.log(data[player]);
+			
 			mod.buildTemplatePicProfile({
 				profilPic: data[player].infos.profilePicSrc,
 				name: data[player].infos.firstLastName,
 				playerName: data[player].infos.cssClass
 			});
-			mod.buildTemplateInfoTable({
-				playerName: data[player]
-			});
+			// mod.buildTemplateInfoTable({
+			// 	playerName: data[player].infos.cssClass
+			// });
 			mod.buildTemplateSeasonTable({
-				playerName: data[player],
-				playerId: data[player]
-			})
+				playerId: data[player].infos.cssClass,
+				seasons: data[player].seasons
+			});
 			
 
 		},
@@ -71,6 +70,7 @@
 		},
 		buildTemplateInfoTable: function(dataObject) {
 			var mod = this;
+			
 			var templateSrc = $('#tpl-inftbl').html(),
 				template = Handlebars.compile(templateSrc),
 				html = template(dataObject),
@@ -80,6 +80,17 @@
 		},
 		buildTemplateSeasonTable: function(dataObject) {
 			var mod = this;
+			console.log(dataObject);
+			var tempArray = [];
+			
+			for (var key in dataObject.seasons) {
+				if (dataObject.seasons.hasOwnProperty(key)) {
+					tempArray.push(key);
+				}
+			}
+			
+			dataObject.seasonKeys = tempArray;
+			
 			var templateSrc = $('#tpl-seasntbl').html(),
 				template = Handlebars.compile(templateSrc),
 				html = template(dataObject),

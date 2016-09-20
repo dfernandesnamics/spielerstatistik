@@ -1,15 +1,24 @@
+<?php
+if(isset($_GET['playerId'])) {
+		$player = $_GET['playerId'];
+		
+	}
+?>
+
 <script id="tpl-seasntbl" type="text/x-handlebars-template">
-	<div class="mod mod-playerseasontable skin-playerseasontable-{{playerName}}">
+	<div class="mod mod-playerseasontable skin-playerseasontable-{{playerId}}">
 		<div class="col l5 push-l1 seasonDisplay">
 			<a href="/views/saisonview">
 				<table class="flat-table-season">
+					{{#each seasonKeys}}
 					<tr>
 						<td>
-							<a href="/views/saisonview?playerId={{playerId}}&season={{seasonYear}}">
-								{{seasonYear}}
+							<a href="/views/saisonview?playerId=<?php echo $player; ?>&season={{this}}">
+								{{this}}
 							</a>
 						</td>
 					</tr>
+					{{/each}}
 				</table>
 			</a>
 		</div>
