@@ -8,7 +8,6 @@ if(isset($_GET['playerId'])) {
 <script id="tpl-seasntbl" type="text/x-handlebars-template">
 	<div class="mod mod-playerseasontable skin-playerseasontable-{{playerId}}">
 		<div class="col l5 push-l1 seasonDisplay">
-			<a href="/views/saisonview">
 				<table class="flat-table-season">
 					{{#each seasonKeys}}
 					<tr>
@@ -20,7 +19,6 @@ if(isset($_GET['playerId'])) {
 					</tr>
 					{{/each}}
 				</table>
-			</a>
 		</div>
 	</div>
 </script>
