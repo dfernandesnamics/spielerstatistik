@@ -5,7 +5,7 @@ if(isset($_GET['playerId'])) {
 	}
 ?>
 
-<div class="mod mod-playerprofile-wrapper">
+<div class="mod mod-playerprofile-wrapper <?php echo $player; ?>">
 	<input class="js-player-id" type="hidden" value="<?php echo $player; ?>">
 	<div class="backgimg js-playerid" data-player="<?php echo $player; ?>">
 		<div class="container">
