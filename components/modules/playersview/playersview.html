@@ -1,26 +1,10 @@
 <div class="mod mod-playersview">
 	<div class="background">
 		<div class="container">
-			<div class="row">
-				<?php 
-				$picSrc = "/assets/img/portraits/renato-sanches.jpg";
-				$playerName = "renatos";
-				$playernameskin = "renato";
-				include ("block-spieler-template.html");
+			<div class="row js-outlet-playersview">
 				
-				
-				$picSrc = "/assets/img/portraits/zlatan-ibrahimovic.jpg";
-				$playerName = "zlatani";
-				$playernameskin = "zlatan";
-				include ("block-spieler-template.html");
-								
-								
-				$picSrc = "/assets/img/portraits/jackson-martinez.jpg";
-				$playerName = "jacksonm";
-				$playernameskin = "jackson";
-				include ("block-spieler-template.html");
-			?>
 			</div>
 		</div>
 	</div>
+	<?php include('block-spieler-template.html'); ?>
 </div>

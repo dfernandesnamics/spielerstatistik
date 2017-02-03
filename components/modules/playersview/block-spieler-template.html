@@ -1,5 +1,16 @@
-<div class="player <?php echo $playerName;?> col l3">
-	<a href='/views/detailview<?php echo "?playerId=" . $playernameskin; ?>'>
-		<img class="homepg" src="<?php echo $picSrc;?>" />
+<?php
+if(isset($_GET['playerId'])) {
+		$player = $_GET['playerId'];
+		
+	}
+?>
+
+<script id="content-holder" type="text/x-handlebars-template">
+{{#each picSrc.players}}
+<div class="player {{playerNaming}} col l3">
+	<a href='/views/detailview?playerId={{this.specialAttributes.cssClass}}'>
+		<img class="homepg" src="{{this.specialAttributes.profilePicSrc}}" />
 	</a>
 </div>
+{{/each}}
+</script>
