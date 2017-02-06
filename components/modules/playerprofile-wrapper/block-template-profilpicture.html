@@ -1,8 +1,31 @@
 <script id="tpl-profpic" type="text/x-handlebars-template">
-<div class="mod mod-profilepicture skin-profilepicture-{{playerName}}">
-	<div class="col l7 push-l2 playerinfo">
-				<h3 class="nameplayer">{{name}}</h3>
-				<img class="zprofile" src="{{profilPic}}">
+	<div class="mod mod-profilepicture skin-profilepicture-{{playerName}}">
+		<div class="col l7 push-l2 playerinfo">
+			<h3 class="nameplayer">{{name}}</h3>
+			<img class="zprofile" src="{{profilPic}}">
+		</div>
 	</div>
-</div>
+	<!--<div class="mod mod-playerinfotable skin-playerinfotable-{{playerName}}">
+		<div class="col l4 push-l1 infos">
+			<table class="flat-table js-flat-table">
+				{{#each playerData}}
+				<tr>
+					<td>{{this}}</td>
+				</tr>
+				{{/each}}
+			</table>
+		</div>
+	</div>!-->
+</script>
+<script id="tpl-inftbl" type="text/x-handlebars-template">
+	<div class="mod mod-playerinfotable skin-playerinfotable-{{playerName}}">
+		<div class="col l6 push-l1 infos">
+				<div class="flat-table js-flat-table">
+					{{#each playerData}}
+					
+					<div class="info-table-css">{{this}}</div>
+					{{/each}}
+				</div>
+		</div>
+	</div>
 </script>
